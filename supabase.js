@@ -16,7 +16,7 @@ const SUPABASE_KEY =
 
 // Criar conexão
 
-const supabase =
+const supabaseClient =
 window.supabase.createClient(
 
     SUPABASE_URL,
