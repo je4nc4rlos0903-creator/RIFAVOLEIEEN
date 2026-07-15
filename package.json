@@ -1,0 +1,8 @@
+{
+  "name": "rifa-volei",
+  "version": "1.0.0",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "mercadopago": "^2.0.0"
+  }
+}
