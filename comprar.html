@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Comprar Rifa</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>🎟 Comprar Números</h1>
+
+<p class="descricao">
+Preencha os dados abaixo e escolha seus números da sorte.
+</p>
+
+<form id="formulario">
+
+<input
+type="text"
+id="nome"
+placeholder="Nome Completo"
+required>
+
+<input
+type="tel"
+id="telefone"
+placeholder="WhatsApp"
+required>
+
+<input
+type="text"
+id="vendedor"
+placeholder="Nome do Vendedor"
+required>
+
+</form>
+
+<div class="acoes">
+
+<input
+type="number"
+id="buscarNumero"
+placeholder="Buscar número"
+min="1"
+max="6000">
+
+<button
+type="button"
+id="btnBuscar">
+
+🔎 Buscar
+
+</button>
+
+<button
+type="button"
+id="btnAleatorio">
+
+🎲 Surpresinha
+
+</button>
+
+</div>
+
+<div class="informacoes">
+
+<span>
+
+Total de números:
+<strong>6000</strong>
+
+</span>
+
+<span id="disponiveis">
+
+Carregando...
+
+</span>
+
+</div>
+
+<div
+id="gradeNumeros"
+class="gradeNumeros">
+
+</div>
+
+<div class="paginacao">
+
+<button
+type="button"
+id="anterior">
+
+⬅ Anterior
+
+</button>
+
+<span id="paginaAtual">
+
+Página 1
+
+</span>
+
+<button
+type="button"
+id="proximo">
+
+Próxima ➡
+
+</button>
+
+</div>
+
+<div class="resumo">
+
+<h3>
+
+Números Escolhidos
+
+</h3>
+
+<div id="listaSelecionados">
+
+Nenhum número selecionado
+
+</div>
+
+<div class="total">
+
+<h2>Total</h2>
+
+<h1 id="valorTotal">
+
+R$ 0,00
+
+</h1>
+
+</div>
+
+</div>
+
+<button
+id="comprar"
+class="btnComprar">
+
+💳 FINALIZAR COMPRA
+
+</button>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
